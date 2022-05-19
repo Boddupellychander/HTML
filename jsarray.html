@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="arrdisplay"></p>
+    <p id="arrdisplay1"></p>
+    <p id="arrdisplay2"></p>
+    <p id="arrdisplay3"></p>
+    <p id="arrdisplay4"></p>
+    <p id="arrdisplay5"></p>
+    <p id="arrdisplay6"></p>
+    <script>
+        const trainees = ["sir", "rajesh", "ramu", "rajan", 2000];
+        const Arrobject = new Array("Praveen Sir", "Bangalore");
+        const TraineeMarks = {
+            Traineename: "Praveen sir",
+            week1: 25,
+            week2: 55
+        };
+        const FrontendTrainees = [];
+        FrontendTrainees[0] = "sir";
+        FrontendTrainees[1] = "the";
+        FrontendTrainees[2] = "arrays";
+        FrontendTrainees[3] = "are important";
+        document.getElementById("arrdisplay").innerHTML = trainees;
+        document.getElementById("arrdisplay1").innerHTML = FrontendTrainees.sort();
+        document.getElementById("arrdisplay2").innerHTML = Arrobject;
+        document.getElementById("arrdisplay3").innerHTML = TraineeMarks.Traineename;
+        document.getElementById("arrdisplay4").innerHTML = trainees.length;
+        document.getElementById("arrdisplay5").innerHTML = trainees.pop();
+        document.getElementById("arrdisplay6").innerHTML = trainees.indexOf("sir"); //it shows index value
+    </script>
+
+</body>
+
+</html>
